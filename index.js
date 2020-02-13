@@ -44,7 +44,7 @@ server.get("/api/users/:id", (req, res)=> {
 
 // POST users "/api/users"
 server.post("/api/users", (req, res) => {
-    coonst userData = req.body;
+    const userData = req.body;
     Users.insert(userData)
     .then(user => {
         res
